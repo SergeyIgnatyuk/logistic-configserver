@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: logistic-configserver
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
