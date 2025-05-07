@@ -42,6 +42,8 @@ resilience4j:
           - org.springframework.web.client.ResourceAccessException
       logisticBp:
         registerHealthIndicator: true
+        ringBufferSizeInClosedState: 6
+        ringBufferSizeInHalfOpenState: 4
         waitDurationInOpenState: 20s
         failureRateThreshold: 60
 feign:
