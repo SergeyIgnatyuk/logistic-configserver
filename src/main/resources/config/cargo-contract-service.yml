@@ -28,6 +28,22 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
+resilience4j:
+  circuitbreaker:
+    instances:
+      cargoContractService:
+        registerHealthIndicator: true
+        waitDurationInOpenState: 10s
+        failureRateThreshold: 50
+        recordExceptions:
+          - org.springframework.web.client.HttpServerErrorException
+          - java.io.IOException
+          - java.util.concurrent.TimeoutException
+          - org.springframework.web.client.ResourceAccessException
+      logisticBp:
+        registerHealthIndicator: true
+        waitDurationInOpenState: 20s
+        failureRateThreshold: 60
 feign:
   okhttp:
     enabled: true
