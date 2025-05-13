@@ -21,9 +21,9 @@ spring:
     openfeign:
       client:
         config:
-          logistic-bp:
+          cargo-contract-service:
             request-interceptors:
-              - by.cargocontractservice.interceptor.UserContextRequestInterceptor
+              - by.logisticbp.interceptor.UserContextRequestInterceptor
 management:
   endpoints:
     enabled-by-default: true
