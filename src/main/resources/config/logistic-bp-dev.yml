@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://camunda-storage:5434/camunda
+    url: jdbc:postgresql://camunda-db:5434/camunda
     username: postgres
     password: postgres
   jpa:
