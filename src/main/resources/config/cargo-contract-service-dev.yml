@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: logistic-kafka:9093
+    bootstrap-servers: logistic-kafka:9092
   datasource:
     url: jdbc:postgresql://logistic-db:5432/logistic
     username: postgres
