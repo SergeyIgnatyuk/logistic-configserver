@@ -23,6 +23,7 @@ spring:
           keycloak:
             issuer-uri: http://logistic-keycloak:8080/realms/logistic-realm
             token-uri: http://logistic-keycloak:8080/realms/logistic-realm/protocol/openid-connect/token
+            authorization-uri: http://logistic-keycloak:8080/realms/logistic-realm/protocol/openid-connect/auth
       resourceserver:
         jwt:
           issuer-uri: http://logistic-keycloak:8080/realms/logistic-realm

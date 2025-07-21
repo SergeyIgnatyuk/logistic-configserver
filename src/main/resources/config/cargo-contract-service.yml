@@ -51,12 +51,3 @@ resilience4j:
         registerHealthIndicator: true
         waitDurationInOpenState: 20s
         failureRateThreshold: 60
-#keycloak:
-#  realm: logistic-realm
-#  auth-server-url: http://localhost:8080/auth
-#  ssl-required: external
-#  resource: logistic
-#  credentials:
-#    secret: EmA6XprlcCQpcSPZ9bIH2qOqX6Go7EFO
-#  use-resource-role-mappings: true
-#  bearer-only: true
