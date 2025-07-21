@@ -23,8 +23,8 @@ spring:
             scope: openid, profile, email
         provider:
           keycloak:
-            issuer-uri: http://localhost:8080/realms/logistic-realm
-            token-uri: http://localhost:8080/realms/logistic-realm/protocol/openid-connect/token
+            issuer-uri: http://logistic-keycloak:8080/realms/logistic-realm
+            token-uri: http://logistic-keycloak:8080/realms/logistic-realm/protocol/openid-connect/token
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/logistic-realm
+          issuer-uri: http://logistic-keycloak:8080/realms/logistic-realm
