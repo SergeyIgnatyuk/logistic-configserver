@@ -21,6 +21,9 @@ spring:
           logistic-bp:
             request-interceptors:
               - by.cargocontractservice.interceptor.UserContextRequestInterceptor
+          logistic-organizations:
+            request-interceptors:
+              - by.cargocontractservice.interceptor.UserContextRequestInterceptor
 management:
   endpoints:
     enabled-by-default: true
