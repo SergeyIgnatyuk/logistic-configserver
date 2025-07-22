@@ -1,0 +1,26 @@
+spring:
+  kafka:
+    bootstrap-servers: logistic-kafka:9092
+  datasource:
+    url: jdbc:postgresql://logistic-db:5432/organizations
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: organizations
+            client-secret: js80v9dkAKfIal2EfaYDgrN9VxoTVYdg
+            client-name: organizations
+            authorization-grant-type: authorization_code
+            scope: openid, profile, email
+      resourceserver:
+        jwt:
+          issuer-uri: http://logistic-keycloak:8080/realms/logistic-realm
